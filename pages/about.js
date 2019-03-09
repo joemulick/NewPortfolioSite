@@ -19,20 +19,7 @@ function About(props) {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4" gutterBottom>
-        Material-UI
-      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-        about page
-      </Typography>
-      <Typography gutterBottom>
-        <Link href="/">
-          <a>Go to the main page</a>
-        </Link>
-      </Typography>
-      <Button variant="contained" color="primary">
-        Do nothing button
-      </Button>
+      
     </div>
   );
 }
