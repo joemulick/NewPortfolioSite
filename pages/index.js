@@ -8,6 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import { withStyles } from '@material-ui/core/styles';
 import MainLandingSection from '../components/MainLandingSection';
 
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -16,21 +17,23 @@ const styles = theme => ({
 });
 
 class Index extends React.Component {
-  // state = {
+
+    constructor(props) {
+      super(props);
+      this.handleScroll = this.handleScroll.bind(this);
+    }
     
-  // };
-
-  // handleClose = () => {
-  //   // this.setState({
-      
-  //   // });
-  // };
-
-  // handleClick = () => {
-  //   // this.setState({
-      
-  //   // });
-  // };
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll);
+    };
+    
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    };
+    
+    handleScroll(event) {
+      console.log('the scroll things', event)
+    };
 
   render() {
     const { classes } = this.props;
@@ -38,6 +41,8 @@ class Index extends React.Component {
     return (
       <div className={classes.root}>
         <MainLandingSection />
+
+
       </div>
     );
   }
