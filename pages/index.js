@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 // import Typography from '@material-ui/core/Typography';
 // import { withStyles } from '@material-ui/core/styles';
+import Navbar from '../components/Navbar';
 import MainLandingSection from '../components/MainLandingSection';
 
 
@@ -40,8 +41,8 @@ class Index extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Navbar />
         <MainLandingSection />
-
 
       </div>
     );

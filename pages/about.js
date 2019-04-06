@@ -18,7 +18,7 @@ function About(props) {
 
   return (
     <div className={classes.root}>
-      
+        
     </div>
   );
 }
