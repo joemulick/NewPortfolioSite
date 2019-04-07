@@ -34,7 +34,10 @@ function Navbar(props) {
                 <Grid item>
                     <div>
                     <Button raised color="accent">
-                        Login
+                        About Me
+                    </Button>
+                    <Button raised color="accent">
+                        Dev Blog
                     </Button>
                     </div>
                 </Grid>
