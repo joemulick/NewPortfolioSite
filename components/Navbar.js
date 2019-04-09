@@ -17,16 +17,14 @@ const styles = {
   navbarColor: {
     backgroundColor: '#FFF7EF',
   },
-  paddingZero: {
-    padding: '0',
-  }
+
+
 };
 
 function Navbar(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
         <AppBar className={classes.navbarColor} position="static">
             <Toolbar>
                 <Grid
@@ -34,21 +32,21 @@ function Navbar(props) {
                 container 
                 spacing={24}
                 >
-                <Grid item>
-                    <Button>React Developer</Button>
-                </Grid>
-                <Grid item>
-                    <Button>
-                        About Me
-                    </Button>
-                    <Button>
-                        Dev Blog
-                    </Button>
-                </Grid>
+                  <Grid item>
+                      <Button>React Developer</Button>
+                  </Grid>
+                  
+                  <Grid item>
+                      <Button>
+                          About Me
+                      </Button>
+                      <Button>
+                          Dev Blog
+                      </Button>
+                  </Grid>
                 </Grid>
             </Toolbar>
         </AppBar>
-    </div>
   );
 }
 

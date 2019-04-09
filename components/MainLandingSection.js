@@ -13,8 +13,6 @@ const styles = theme => ({
     }, 
     mainGrid: {
         // will likely need to remove minHeight and width in future once content is built out.
-        minHeight: '100vmin',
-        width: 'auto',
         backgroundColor: '#FFF7EF',
     },
     font: {
@@ -63,7 +61,6 @@ const styles = theme => ({
                 <Grid className={classes.mainGrid} 
                 container
                 direction="column"
-                spacing={24}
                 >
 
                   <Grid item>

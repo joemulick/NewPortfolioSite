@@ -7,12 +7,13 @@ import Navbar from './Navbar'
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: '1',
   },
   layoutStyle: {
     padding: '0'
   },
   bgColor: {
+    flexGrow: '1',
     backgroundColor: '#FFF7EF',
   }
 };
@@ -32,10 +33,9 @@ function Layout(props) {
         </Grid> */}
         <Grid
             container 
-            spacing={24}
-            justify='center'
+            justify="center"
         >
-          <Grid item lg={10}>
+          <Grid item>
             <Navbar />
             {props.children}
           </Grid>
@@ -49,13 +49,3 @@ Layout.propTypes = {
 };
 
 export default withStyles(styles)(Layout);
-
-
-              <Grid
-                container 
-                spacing={24}
-                >
-                <Grid item lg={8}>
-                    
-                </Grid>
-              </Grid>
