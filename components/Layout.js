@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { withStyles } from '@material-ui/core/styles';
 import Navbar from './Navbar'
 
@@ -8,8 +9,7 @@ const styles = {
     flexGrow: 1,
   },
   layoutStyle: {
-    margin: '200px',
-    padding: '200px',
+    
   }
 };
 
@@ -20,10 +20,10 @@ function Layout(props) {
 
   return (
     <div className={classes.layoutStyle}>
+      <CssBaseline />
       <Navbar />
       {props.children}
     </div>
-    
   );
 }
 
