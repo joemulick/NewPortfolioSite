@@ -11,6 +11,9 @@ const styles = {
   root: {
     flexGrow: 1,
   },
+  grow: {
+    flexGrow: 1,
+  },
   navbarColor: {
     backgroundColor: '#FFF7EF',
   },
@@ -32,17 +35,15 @@ function Navbar(props) {
                 spacing={24}
                 >
                 <Grid item>
-                    <Button className={classes.button}>React Developer</Button>
+                    <Button>React Developer</Button>
                 </Grid>
                 <Grid item>
-                    <div>
                     <Button>
                         About Me
                     </Button>
                     <Button>
                         Dev Blog
                     </Button>
-                    </div>
                 </Grid>
                 </Grid>
             </Toolbar>
