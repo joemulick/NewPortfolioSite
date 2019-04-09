@@ -13,6 +13,9 @@ const styles = {
   },
   navbarColor: {
     backgroundColor: '#FFF7EF',
+  },
+  paddingZero: {
+    padding: '0',
   }
 };
 
@@ -22,7 +25,7 @@ function Navbar(props) {
   return (
     <div className={classes.root}>
         <AppBar className={classes.navbarColor} position="static">
-            <Toolbar>
+            <Toolbar className={classes.paddingZero}>
                 <Grid
                 justify="space-between"
                 container 

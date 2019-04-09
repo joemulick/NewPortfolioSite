@@ -59,9 +59,11 @@ const styles = theme => ({
       return (
         <React.Fragment>
             <nav ref={this.nav}>
+              <div className={classes.root}>
                 <Grid className={classes.mainGrid} 
                 container
                 direction="column"
+                spacing={24}
                 >
 
                   <Grid item>
@@ -85,9 +87,9 @@ const styles = theme => ({
                     </Typography> 
                   </Grid>
 
-
                 </Grid>
-            </nav>
+              </div>
+          </nav>
         </React.Fragment>
       );
     }
