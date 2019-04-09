@@ -13,7 +13,6 @@ const styles = {
     padding: '0'
   },
   bgColor: {
-    maxWidth: '1200px',
     backgroundColor: '#FFF7EF',
   }
 };
@@ -26,23 +25,21 @@ function Layout(props) {
   return (
     <div className={classes.bgColor}>
         <CssBaseline />
-
         {/* <Grid item>
           <CssBaseline />
           <Navbar />
           {props.children}
         </Grid> */}
-
         <Grid
-          container 
-          spacing={24}
-          justify='center'
+            container 
+            spacing={24}
+            justify='center'
         >
-          <Grid item>
+          <Grid item lg={10}>
             <Navbar />
-            {props.children}              
+            {props.children}
           </Grid>
-        </Grid>
+        </Grid>              
     </div>
   );
 }

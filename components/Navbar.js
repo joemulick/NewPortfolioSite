@@ -28,7 +28,7 @@ function Navbar(props) {
   return (
     <div className={classes.root}>
         <AppBar className={classes.navbarColor} position="static">
-            <Toolbar className={classes.paddingZero}>
+            <Toolbar>
                 <Grid
                 justify="space-between"
                 container 
