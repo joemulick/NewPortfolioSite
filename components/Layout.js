@@ -15,7 +15,10 @@ const styles = {
   bgColor: {
     flexGrow: '1',
     backgroundColor: '#FFF7EF',
-  }
+  },
+  contentWrapper: {
+   
+  },
 };
 
 
@@ -31,15 +34,12 @@ function Layout(props) {
           <Navbar />
           {props.children}
         </Grid> */}
-        <Grid
-            container 
-            justify="center"
-        >
-          <Grid item>
+
             <Navbar />
-            {props.children}
-          </Grid>
-        </Grid>              
+            
+              {props.children}
+           
+                      
     </div>
   );
 }

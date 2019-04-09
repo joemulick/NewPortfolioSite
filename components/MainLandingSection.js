@@ -19,7 +19,7 @@ const styles = theme => ({
       fontFamily: 'Comfortaa, cursive'
     },
     lastNamePadding: {
-      marginLeft: '1.75%'
+      marginLeft: '2.30%'
     }
 
 

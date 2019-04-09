@@ -2,12 +2,12 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Head from 'next/head'
+
 // import Link from 'next/link';
-import { withStyles } from '@material-ui/core/styles';
-import Layout from '../components/Layout.js'
-// import Typography from '@material-ui/core/Typography';
 // import { withStyles } from '@material-ui/core/styles';
+import Layout from '../components/Layout.js'
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 import MainLandingSection from '../components/MainLandingSection';
 
 
