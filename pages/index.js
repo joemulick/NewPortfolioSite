@@ -15,27 +15,11 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
   },
-
+git 
 });
 
 class Index extends React.Component {
 
-    constructor(props) {
-      super(props);
-      this.handleScroll = this.handleScroll.bind(this);
-    }
-    
-    componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll);
-    };
-    
-    componentWillUnmount() {
-      window.removeEventListener('scroll', this.handleScroll);
-    };
-    
-    handleScroll(event) {
-      console.log('the scroll things', event)
-    };
 
   render() {
     const { classes } = this.props;
