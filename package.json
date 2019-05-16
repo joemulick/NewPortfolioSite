@@ -10,7 +10,9 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-jss": "^8.1.0"
+    "react-jss": "^8.1.0",
+    "three": "^0.104.0",
+    "three-react-fiber": "latest"
   },
   "scripts": {
     "dev": "next",

@@ -15,7 +15,6 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
   },
-git 
 });
 
 class Index extends React.Component {
